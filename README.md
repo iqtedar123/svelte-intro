@@ -3,6 +3,8 @@ Demo app built using Svelte and SvelteKit.
 
 It includes code samples and uses the spoonacular API for data fetching.
 
+Visit: https://magical-world-of-svelte.vercel.app/
+
 ## Developing
 
 `npm install`
