@@ -5,7 +5,7 @@
 
   export let themes = {
     danger: "#E26D69",
-    success: "#84C991",
+    success: "#6366F1",
     warning: "#f0ad4e",
     info: "#5bc0de",
     default: "#aaaaaa",
@@ -45,6 +45,7 @@
   .toast {
     flex: 0 0 auto;
     margin-bottom: 10px;
+    border-radius: 8px;
   }
 
   .content {

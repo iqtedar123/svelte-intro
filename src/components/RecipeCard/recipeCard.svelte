@@ -30,6 +30,7 @@
   function addToCart() {
     cart.update((cart) => {
       if (cart.some((item) => item.id === recipe.id)) {
+        notifications.danger("Already in cart! Try another item.", 1500);
         return cart;
       }
       notifications.success("Added to cart!", 2000);
