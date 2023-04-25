@@ -20,8 +20,7 @@
         Recipes Demo
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        This demo uses <code>SvelteKit</code> to <code>SSR</code> some random recipes
-        using the Spoonacular API.
+        This demo renders some random recipes using the Spoonacular API.
       </p>
     </div>
   </div>
