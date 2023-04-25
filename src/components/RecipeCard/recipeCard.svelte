@@ -14,6 +14,7 @@
   } from "@fortawesome/free-solid-svg-icons";
   import { cart } from "../../stores/store";
   import { notifications } from "../../notifications";
+  import { onDestroy } from "svelte";
 
   export let recipe: RecipeI;
 
@@ -37,6 +38,9 @@
       return [...cart, recipe];
     });
   }
+  onDestroy(() => {
+    notifications.clear();
+  });
 </script>
 
 <div class="flex flex-col gap-4">

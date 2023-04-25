@@ -11,6 +11,12 @@ function createNotificationStore(timeout) {
     });
   }
 
+  function clear() {
+    _notifications.update(() => {
+      return [];
+    });
+  }
+
   let timers = [];
 
   const notifications = derived(_notifications, ($_notifications, set) => {
@@ -37,6 +43,7 @@ function createNotificationStore(timeout) {
     warning: (msg, timeout) => send(msg, "warning", timeout),
     info: (msg, timeout) => send(msg, "info", timeout),
     success: (msg, timeout) => send(msg, "success", timeout),
+    clear,
   };
 }
 
